@@ -1,0 +1,6 @@
+
+You should take a look at WinCI-server which is intended to be used with this gem.
+
+For more information on WinCI, see http://winci.rubyforge.org
+
+
