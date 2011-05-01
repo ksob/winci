@@ -1,7 +1,7 @@
 winci
 ======
 
-[WinCI] Simplifies mplementation of a full continuous deployment pipeline the Agile way with Jenkins/Hudson continuous integration server under Windows.
+[WinCI] Simplifies implementation of a full continuous deployment pipeline the Agile way with Jenkins/Hudson continuous integration server under Windows.
 
 Install
 =======
@@ -19,7 +19,7 @@ only then is he introduced to some configuration options.
 
 WinCI is written in Ruby and uses Jenkins.rb gem to automate installation and interaction with Jenkins CI and also ruby-git gem to automate CI provisioning.
 
-WinCI is intended to be be used in conjunction with WinCI-server [https://github.com/ksob/winci-server] and WinCI-updater [https://github.com/ksob/winci-updater] projects.
+WinCI is intended to be used in conjunction with WinCI-server [https://github.com/ksob/winci-server] and WinCI-updater [https://github.com/ksob/winci-updater] projects.
 
 WinCI-server provides functionality necessary to setup Jenkins CI and enabling to create installation bundle used in provisioning process and WinCI-updater plays huge role in the provisioning process.
 
