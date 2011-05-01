@@ -26,8 +26,31 @@ WinCI-server provides functionality necessary to setup Jenkins CI and enabling t
 Usage
 =====
 
-First download and run WinCI-server.
-Then you can start using this gem, first take a look at examples directory. 
+First download and run WinCI-server from here: http://rubyforge.org/projects/ksob/
+
+Then you can start using winci gem like this:
+
+	require 'jenkins'
+	require 'winci'
+
+	project_name = 'my_project'
+
+	cfg = Jenkins::JobConfigBuilder.new(:ruby) do |c|
+	  c.scm = "C:/repos/#{project_name}.git"
+	  c.steps = [
+		  # below makes sense when your Rakefile run rspec/cucumber by default
+		[:build_bat_step, "bundle exec rake"],
+		# this will send current code to production repo only after rspec/cucumber passed
+		[:build_bat_step, "git push c:/repos/production/files.git HEAD:master"]
+	  ]
+	end
+
+	job = WinCI::Job.new project_name, cfg
+
+	# by default creates job on localhost:3010
+	job.create
+
+For details take a look at examples directory. 
 Keep in mind that so far this project is mostly a wrapper for functionality contained in Jenkins.rb gem,
 so if you would like to create nodes in Jenkins or create rake build steps then you should look at Jenkins.rb gem's docs or API file.
 
