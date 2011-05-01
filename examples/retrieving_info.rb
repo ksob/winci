@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'winci'
 
 project_name = 'files'
