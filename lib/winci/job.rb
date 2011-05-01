@@ -27,9 +27,9 @@ module WinCI
       Jenkins::Api.setup_base_url(:host => server, :port => port)
 
       if Jenkins::Api.create_job(name=@project_name, @config, options = {:override => true}) == true
-        puts "#{@project_name} project created on jenkins"
+        return "#{@project_name} project created on jenkins"
       else
-        puts "#{@project_name} project not created, something gone wrong or it already exist"
+        raise "#{@project_name} project not created, something gone wrong or it already exist"
       end
     end
 
