@@ -7,7 +7,6 @@ Install
 =======
 
     gem install winci
-	
 
 Introduction
 =======
@@ -20,9 +19,9 @@ only then is he introduced to some configuration options.
 
 WinCI is written in Ruby and uses Jenkins.rb gem to automate installation and interaction with Jenkins CI and also ruby-git gem to automate CI provisioning.
 
-WinCI is intended to be be used in conjunction with WinCI-server, which is another gem containing functionality necessary 
-to setup Jenkins CI and enabling to create installation bundle used in provisioning process.
+WinCI is intended to be be used in conjunction with WinCI-server [https://github.com/ksob/winci-server] and WinCI-updater [https://github.com/ksob/winci-updater] projects.
 
+WinCI-server provides functionality necessary to setup Jenkins CI and enabling to create installation bundle used in provisioning process and WinCI-updater plays huge role in the provisioning process.
 
 Usage
 =====
@@ -32,14 +31,12 @@ Then you can start using this gem, first take a look at examples directory.
 Keep in mind that so far this project is mostly a wrapper for functionality contained in Jenkins.rb gem,
 so if you would like to create nodes in Jenkins or create rake build steps then you should look at Jenkins.rb gem's docs or API file.
 
-
-
 License
 =======
 
 (The MIT License)
 
-Copyright (c) 2011 Kamil Sobieraj, ksob\at\rubyforge.org
+Copyright (c) 2011 Kamil Sobieraj, ksobej@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
