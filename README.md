@@ -21,7 +21,7 @@ WinCI-server provides functionality necessary to setup Jenkins CI and enabling t
 Why This Project
 =======
 
-I needed to be able to exactly replicate every part of the continuous deployment pipeline installation process under Windows. To do so I needed to have at least perfectly working dependencies system. Bundler with Gemfile.lock system was the best to choose at the time of writing. Another aspect was solid provisioning process. At the time of writing such projects like Puppet or Capistrano were hard to port onto Windows platform so eventually I decided write my own using Git and available wrapper gems. For details go to: https://github.com/ksob/winci-updater
+I needed to be able to exactly replicate every part of the continuous deployment pipeline installation process under Windows. To do so I needed to have at least perfectly working dependencies system. Bundler with Gemfile.lock system was the best to choose at the time of writing. Another aspect was solid provisioning process. At the time of writing such projects like Puppet or Capistrano were hard to port onto Windows platform so eventually I decided write my own using MSysGit and available wrapper gems. For details go to: https://github.com/ksob/winci-updater
 
 Install
 =======
