@@ -84,7 +84,22 @@ This project ships with a scaffold of the repository described above. The scaffo
 Another solution is to remove bundler installation part from the scaffold and assume that the
 bundler is preinstalled.
 
+Developer Instructions
+======================
 
+The dependencies for the gem and for developing the gem are managed by Bundler.
+
+    gem install bundler
+    git clone http://github.com/ksob/winci.git
+    cd ./winci
+	bundle install
+
+Examples are run with (they require some proconditions to be met like running Jenkins):
+
+    cd ./examples
+	ruby basic.rb
+	ruby extended.rb
+	ruby retrieving_info.rb
 
 Notes
 =====
